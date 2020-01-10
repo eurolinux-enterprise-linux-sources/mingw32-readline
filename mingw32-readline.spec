@@ -6,7 +6,7 @@
 
 Name:           mingw32-readline
 Version:        5.2
-Release:        7%{?dist}.4
+Release:        7%{?dist}.5
 Summary:        MinGW port of readline for editing typed command lines
 
 
@@ -121,6 +121,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 5.2-7.4
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
